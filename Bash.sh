@@ -1,3 +1,7 @@
+# Ubuntu/Debian
+sudo apt update
+sudo apt install icecast2 liquidsoap
+
 mkdir build
 cd build
 cmake ..

@@ -8,6 +8,15 @@ cmake ..
 make
 sudo make install
 
+
+docker-compose logs -f icecast
+docker-compose logs -f liquidsoap
+docker-compose logs -f matrix-daemon
+docker-compose logs -f aura-api
+
+docker-compose build
+docker-compose up -d
+
          +----------------+
          |  DJ / Live Mic |
          +--------+-------+

@@ -1,0 +1,11 @@
+function stopLiveMode() {
+    if (AuraState.mode !== "live") return;
+
+    AuraState.mode = "queue";
+    DOM.audio.pause();
+
+    if (AuraState.liveMetadataTimer) {
+        clearInterval(AuraState.liveMetadataTimer);
+        AuraState.liveMetadataTimer = null;
+    }
+}

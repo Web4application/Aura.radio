@@ -1,0 +1,30 @@
+<icecast>
+  <limits>
+    <clients>100</clients>
+    <sources>2</sources>
+    <queue-size>524288</queue-size>
+    <client-timeout>30</client-timeout>
+    <header-timeout>15</header-timeout>
+    <source-timeout>10</source-timeout>
+  </limits>
+
+  <authentication>
+    <source-password>livepassword</source-password>
+    <admin-user>admin</admin-user>
+    <admin-password>adminpassword</admin-password>
+  </authentication>
+
+  <hostname>yourdomain.com</hostname>
+
+  <mount>
+    <mount-name>/live.ogg</mount-name>
+    <username>source</username>
+    <password>livepassword</password>
+    <public>1</public>
+  </mount>
+
+  <listen-socket>
+    <port>8000</port>
+  </listen-socket>
+
+</icecast>

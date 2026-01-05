@@ -67,7 +67,7 @@ body { margin:0; font-family:system-ui,sans-serif; background:#f5f5f5; }
 
   <!-- PLAYER -->
   <div id="player">
-    <audio controls autoplay id="player-audio"></audio>
+    <audio controls autoplay id="player-audio"><audio controls autoplay src="http://icecast-server:8000/live"></audio></audio>
     <button id="next-track">Next Track</button>
     <button id="toggle-live">Go Live</button>
     <div id="now-playing-container">
@@ -257,6 +257,8 @@ addToQueue({title:"Song 2", artist:"DJ B", url:"song2.mp3", cover:"cover2.jpg"})
 addToQueue({title:"Song 3", artist:"DJ C", url:"song3.mp3", cover:"cover3.jpg"});
 
 audio.onended=()=>{ if(liveMode) playNext(); };
+<iframe src="https://audiomack.com//embed/kubuleeofficial/playlist/cole" scrolling="no" width="100%" height="400" frameborder="0" title="Cole"></iframe>
+<iframe src="https://audiomack.com//embed/kubuleeofficial/playlist/latest" scrolling="no" width="100%" height="400" frameborder="0" title="big boy sound"></iframe>
 </script>
 </body>
 </html>

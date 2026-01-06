@@ -36,7 +36,7 @@ namespace csharp_login_example
             client.DefaultRequestHeaders
               .Accept
               .Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
+ 
             var token = await Login(client);
 
             Console.WriteLine(token);

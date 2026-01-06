@@ -1,5 +1,5 @@
 store:
-  path: "${api.aura.radio}"
+  path: main
   audio:
     format: flac
     sample-rate: 44100
@@ -28,10 +28,10 @@ importer:
 #     login-timeout: 10m # defaults to 5 Minutes
 #   passwd:
 #     admin:
-#       password: ${ADMIN_PASSWORD}
+#       password: ${password}
 #       privileged: true
 #     hugo:
-#       password: changeme
+#       password: password
 #       readonly: true
 #       shows:
 #         - hugo
